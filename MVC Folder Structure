@@ -1,0 +1,47 @@
+haatbazar/
+│
+├── client/                     # Frontend (HTML, CSS, JS)
+│   ├── index.html
+│   ├── product.html
+│   ├── cart.html
+│   ├── login.html
+│   ├── register.html
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── api.js              # API calls
+│   │   ├── cart.js
+│   │   ├── auth.js
+│   │   └── products.js
+│
+├── server/                     # Backend (Express MVC)
+│   ├── config/
+│   │   └── db.js               # Database connection
+│
+│   ├── models/                 # M = Models
+│   │   ├── User.js
+│   │   ├── Product.js
+│   │   └── Order.js
+│
+│   ├── controllers/            # C = Controllers
+│   │   ├── authController.js
+│   │   ├── productController.js
+│   │   └── orderController.js
+│
+│   ├── routes/                 # Routes (API endpoints)
+│   │   ├── authRoutes.js
+│   │   ├── productRoutes.js
+│   │   └── orderRoutes.js
+│
+│   ├── middleware/             # Middleware (Auth, Errors)
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│
+│   ├── utils/                  # Helper functions
+│   │   └── generateToken.js
+│
+│   └── server.js               # Entry point
+│
+├── .env
+├── package.json
+└── README.md
