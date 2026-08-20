@@ -45,3 +45,16 @@ haatbazar/
 ├── .env
 ├── package.json
 └── README.md
+
+
+Product
+│
+├── name
+├── description
+├── price
+├── category
+├── image
+├── stock
+├── isAvailable
+├── createdAt
+└── updatedAt

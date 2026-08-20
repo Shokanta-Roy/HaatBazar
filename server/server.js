@@ -13,6 +13,7 @@ dotenv.config({
 });
 
 const connectDB = require("./config/db");
+const productRoutes = require("./routes/productRoutes");
 
 const app = express();
 
@@ -20,7 +21,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Health check route
+// Routes
+app.use("/api/products", productRoutes);
+
+// Health check
 app.get("/api/health", (req, res) => {
   res.status(200).json({
     success: true,
