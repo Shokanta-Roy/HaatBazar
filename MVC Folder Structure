@@ -47,14 +47,41 @@ haatbazar/
 └── README.md
 
 
-Product
+
+
+
+
+HaatBazar/
 │
-├── name
-├── description
-├── price
-├── category
-├── image
-├── stock
-├── isAvailable
-├── createdAt
-└── updatedAt
+├── client/
+│   ├── index.html
+│   ├── products.html
+│   ├── product-details.html
+│   ├── cart.html
+│   ├── checkout.html
+│   ├── login.html
+│   ├── register.html
+│   │
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── products.css
+│   │   ├── cart.css
+│   │   └── auth.css
+│   │
+│   └── js/
+│       ├── api.js
+│       ├── common.js
+│       ├── home.js
+│       ├── products.js
+│       ├── product-details.js
+│       ├── cart.js
+│       ├── checkout.js
+│       └── auth.js
+│
+└── server/
+    ├── server.js
+    ├── models/
+    ├── routes/
+    ├── controllers/
+    ├── middleware/
+    └── ...

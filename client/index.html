@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HaatBazar - Fresh Products Online</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            🛒 Haat<span>Bazar</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#categories">Categories</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+            <a href="cart.html" class="cart-btn">
+                🛒
+                <span id="cart-count">0</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="hero-small">
+                    🥬 Fresh from local markets
+                </p>
+
+                <h1>
+                    Your Everyday
+                    <span>Haat</span>,
+                    Delivered.
+                </h1>
+
+                <p>
+                    Buy fresh fish, meat, vegetables, fruits and
+                    daily essentials directly from trusted sellers.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="products.html" class="primary-btn">
+                        Shop Now →
+                    </a>
+
+                    <a href="#categories" class="secondary-btn">
+                        Explore Categories
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="hero-card">
+
+                    <div class="hero-emoji">
+                        🥦
+                    </div>
+
+                    <h3>
+                        Fresh & Local
+                    </h3>
+
+                    <p>
+                        Quality products delivered to your doorstep.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="container feature-grid">
+
+            <div class="feature">
+                <div class="feature-icon">🚚</div>
+
+                <div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick delivery to your doorstep.</p>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <div class="feature-icon">🥬</div>
+
+                <div>
+                    <h3>Fresh Products</h3>
+                    <p>Fresh products from trusted sellers.</p>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+
+                <div>
+                    <h3>Secure Payment</h3>
+                    <p>Safe and secure checkout.</p>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <div class="feature-icon">⭐</div>
+
+                <div>
+                    <h3>Trusted Sellers</h3>
+                    <p>Buy from verified sellers.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="section" id="categories">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-label">SHOP BY CATEGORY</p>
+
+                    <h2>
+                        What are you looking for?
+                    </h2>
+                </div>
+
+                <a href="products.html">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <a href="products.html?category=Vegetables"
+                   class="category-card">
+
+                    <div class="category-icon">
+                        🥬
+                    </div>
+
+                    <h3>Vegetables</h3>
+
+                    <p>Fresh vegetables</p>
+
+                </a>
+
+
+                <a href="products.html?category=Fish"
+                   class="category-card">
+
+                    <div class="category-icon">
+                        🐟
+                    </div>
+
+                    <h3>Fish</h3>
+
+                    <p>Fresh local fish</p>
+
+                </a>
+
+
+                <a href="products.html?category=Meat"
+                   class="category-card">
+
+                    <div class="category-icon">
+                        🥩
+                    </div>
+
+                    <h3>Meat</h3>
+
+                    <p>Fresh meat</p>
+
+                </a>
+
+
+                <a href="products.html?category=Fruits"
+                   class="category-card">
+
+                    <div class="category-icon">
+                        🍎
+                    </div>
+
+                    <h3>Fruits</h3>
+
+                    <p>Fresh seasonal fruits</p>
+
+                </a>
+
+
+                <a href="products.html?category=Grocery"
+                   class="category-card">
+
+                    <div class="category-icon">
+                        🛍️
+                    </div>
+
+                    <h3>Grocery</h3>
+
+                    <p>Daily essentials</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+
+    <section class="section products-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-label">
+                        FRESH TODAY
+                    </p>
+
+                    <h2>
+                        Popular Products
+                    </h2>
+                </div>
+
+                <a href="products.html">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div id="featured-products"
+                 class="product-grid">
+
+                <div class="loading">
+                    Loading products...
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>
+                Fresh products.
+                Better prices.
+                Your local Haat.
+            </h2>
+
+            <p>
+                Start shopping today.
+            </p>
+
+            <a href="products.html" class="primary-btn">
+                Start Shopping →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-container">
+
+        <div>
+
+            <h2 class="logo">
+                🛒 Haat<span>Bazar</span>
+            </h2>
+
+            <p>
+                Your digital local marketplace.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Account</h3>
+
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 HaatBazar. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+</html>

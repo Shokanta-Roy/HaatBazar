@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Products - HaatBazar</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            🛒 Haat<span>Bazar</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="cart.html" class="cart-btn">
+                🛒
+                <span id="cart-count">0</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="section">
+
+<div class="container">
+
+    <div class="section-header">
+
+        <div>
+
+            <p class="section-label">
+                HAATBAZAR STORE
+            </p>
+
+            <h1>
+                All Products
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div style="
+        display:flex;
+        gap:15px;
+        margin-bottom:30px;
+        flex-wrap:wrap;
+    ">
+
+        <input
+            id="search-input"
+            type="text"
+            placeholder="Search products..."
+            style="
+                flex:1;
+                min-width:250px;
+                padding:14px;
+                border:1px solid #e2e8f0;
+                border-radius:10px;
+            "
+        >
+
+
+        <select
+            id="category-filter"
+            style="
+                padding:14px;
+                border:1px solid #e2e8f0;
+                border-radius:10px;
+            "
+        >
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="Fish">
+                Fish
+            </option>
+
+            <option value="Meat">
+                Meat
+            </option>
+
+            <option value="Vegetables">
+                Vegetables
+            </option>
+
+            <option value="Fruits">
+                Fruits
+            </option>
+
+            <option value="Grocery">
+                Grocery
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="products-container"
+        class="product-grid"
+    >
+
+        <div class="loading">
+            Loading products...
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/products.js"></script>
+
+</body>
+
+</html>
